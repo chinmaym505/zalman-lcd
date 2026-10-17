@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+snapshot.png
+
+# Zalman's installer, binaries and decompiled source are their copyrighted code; keep them out of the repo
+*.exe
+*.dll
+oz/
+dec_app/
+dec_service/
+strings*.txt
+keys*.txt
+
+# local, unpublished files
+private/

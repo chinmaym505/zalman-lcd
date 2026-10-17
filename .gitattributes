@@ -1,0 +1,3 @@
+# Keep LF endings on checkout from Windows; CRLF breaks the shell scripts and the shebang on Linux.
+* text=auto eol=lf
+*.png binary

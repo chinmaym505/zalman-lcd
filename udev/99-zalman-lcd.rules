@@ -1,0 +1,2 @@
+# Zalman P40 DS / ZM-MF916 LCD (USB 1c57:3ed7): let the plugdev group open it and add a stable name
+KERNEL=="hidraw*", ATTRS{idVendor}=="1c57", ATTRS{idProduct}=="3ed7", MODE="0660", GROUP="plugdev", SYMLINK+="zalman-lcd"

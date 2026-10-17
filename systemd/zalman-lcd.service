@@ -1,0 +1,15 @@
+[Unit]
+Description=Zalman P40 DS LCD dashboard
+After=systemd-udevd.service
+
+[Service]
+Type=simple
+# @USER@ is replaced by install.sh with the account the dashboard runs as (must be in plugdev)
+User=@USER@
+ExecStart=/usr/bin/python3 /opt/zalman-lcd/zalman_lcd.py dashboard --fps 2 --brightness 80
+Restart=always
+RestartSec=5
+Nice=10
+
+[Install]
+WantedBy=multi-user.target
