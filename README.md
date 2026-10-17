@@ -128,6 +128,10 @@ Every message is one 1024-byte HID output report. Commands are small HTTP-like t
 | `docs/REVERSE_ENGINEERING.md` | How the protocol was recovered from OZ-Wide |
 | `tools/decrypt_strings.cs` | Windows helper that decrypts OZ-Wide's obfuscated strings (research only) |
 
+## License
+
+[MIT](LICENSE)
+
 ## Disclaimer
 
 Not affiliated with or endorsed by Zalman. The protocol was worked out for interoperability, and no Zalman code or binaries are included. Commands that write to the panel's storage or firmware (`transport`, `recovery`, firmware updates) are deliberately not implemented. Use at your own risk.
